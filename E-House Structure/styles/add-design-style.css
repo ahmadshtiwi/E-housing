@@ -1,0 +1,144 @@
+/******************************** general **************************************/
+
+:root
+{    
+    --background-card:#eeeeee99;
+    --background-buttons:#fff;
+    --master-color:#e5cc99;
+    --font-style:Lexend Deca;
+
+    /*عرض الصورة*/
+    --width-image-design:200px;
+    --width-row:180px;
+
+    /*لون النص العادي*/
+    --text-color-black:#000;
+    /*لون نص المعلومات*/
+    --text-color-info:#F00;
+
+    /*حجم خط الازرار*/
+    --text-size-button:20px;
+   /*حجم خط نص الادخال*/
+    --text-size-input:16px;
+
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    color: var(--text-color-black);
+    font-weight: 900;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/********************/
+.add-design
+{
+    background-color: var(--background-card);
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px black;
+}
+
+/*الصورة*/
+.image-design
+{
+    width:var(--width-image-design);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black ;
+}
+
+/*قسم الصورة وزر التحميل*/
+.image_session
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/*صندوق المعلومات */
+.information
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px 50px;
+}
+input,select
+{
+    color:var(--text-color-info);
+    font-family:var(--font-style);
+    font-size:var(--text-size-input);
+}
+
+/*الصورة المتحركة الخلفية*/
+.sv
+{
+    position: absolute;
+    z-index: -1;
+}
+
+/* صندوق يحتوي الالزرار*/
+.contener-buttons
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+/*الازرار*/
+.buttons
+{
+    background-color:var(--master-color);
+    font-size: var(--text-size-button);
+    color: var(--text-color-black);
+    font-family: var(--font-style);
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 10px;  
+}
+
+/* زر التعديل */
+.edit-design-btn
+{
+    text-decoration: none;
+    background-color:var(--master-color);
+    color: var(--text-color-black);
+    font-family: var(--font-style);
+    font-size: var(--text-size-button);
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 10px;  
+}
+
+
+.error
+{
+    background-color: var(--text-color-info);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+/* صناديق التي تحتوي العناوين والصناديق*/
+.row
+{
+    display:flex;
+}
+.item
+{
+    width:var(--width-row);
+}

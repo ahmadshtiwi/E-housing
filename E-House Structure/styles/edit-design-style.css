@@ -1,0 +1,125 @@
+/******************************** general **************************************/
+
+:root
+{   
+    --background-card:#e5cc99aa;
+    --bacground-body:#eee;
+    --background-buttons:#fff;
+    --master-color:#e5cc99;
+    --font-style:Lexend Deca;
+
+    --text-color-black:#000;
+    --text-size-button:14px;
+
+    --text-color-attribute:#F00;
+
+    --width-image:300px;
+    --height-image:300px;
+    
+    --width-area-box:50px;
+    --width-data-in-row:170px;
+
+    --background-box:transparent;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    background-color: var(--bacground-body);
+}
+/***************** coniner divs in body *************************/
+
+.designs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:30px  0px;
+    margin-top: 30px;
+}
+/********************* card  *************************/
+
+.card
+{
+    background-color:var(--background-card);
+    font-family:var(--font-style);
+    color: var(--text-color-black);
+    padding: 10px;
+    display: inline-flex;
+    flex-flow: column;
+    border-radius: 50px 8px;
+    gap: 10px;
+    
+}
+
+/*صورة التصميم*/
+img{
+    width:var(--width-image);
+    height: var(--height-image);
+    align-self: center;
+    border-radius: 20px;
+}
+
+
+
+/*خاص في الازرار  نفسها */
+button{
+    background-color: var(--background-buttons);
+    font-size: var(--text-size-button);
+    font-family: var(--font-style);
+    color: var(--text-color-black);
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 50px 8px;
+    margin-top: 10px;
+}
+
+/*الصندوق الذي يحتوي على الازرار*/
+.continer-buttons
+{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+/*الصف الذي يحتوي على  صندوقيين البيانات */
+.row
+{
+    display: flex;
+}
+
+/*صندوق البيانات الداخلي*/
+.row div{
+    width:var(--width-data-in-row);
+}
+
+/*صناديق الادخال */
+.input-box
+{
+    width:30px;
+    background-color: var(--background-box);
+    border: 1px solid black;
+    font-family: var(--font-style);
+    color: var(--text-color-attribute);
+}
+/*ادحال السعر والمساحة*/
+#price,#area
+{
+    width:var(--width-area-box);
+}
+
+/*صندوق الاختيار
+مثل عمان المفرق الزرقاء*/
+.select-box
+{
+    font-family: var(--font-style);
+    color: var(--text-color-attribute);
+    background-color: var(--background-box);
+}

@@ -1,0 +1,109 @@
+
+/******************************** general **************************************/
+
+:root
+{   /*general*/ 
+    --bacground-body:#eee;      /*لون خلفية الموقع */
+    --master-color:#e5cc99;     /*اللون الرئيسي للموقع */
+    --font-style:Lexend Deca; /* شكل الخط */
+
+   
+
+    /*card design */
+    --background-card-button:#FFF; /* لون الزر داخل التصميم*/
+    --text-color-card-button-text:#000; /* لون نص الزر داخل التصميم*/
+    --background-card:#e5cc99aa; /*لون صندوق التصاميم*/
+    --text-size-card-button:14px;
+    --text-color-attribute:#F00;
+    --width-image:300px;
+    --height-image:300px;
+    --height-design:80vh;
+    --width-div-in-card:152px;
+    --width-design-area:80%;
+
+
+  
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    background-color: var(--bacground-body);
+}
+/*******************************************/
+
+
+
+.designs
+{
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+/**************************************** card in body *************************/
+.card
+{
+    padding: 10px;
+    border-radius: 50px 8px;
+    display:inline-flex;
+    flex-flow: column;
+    align-items: center;
+    height: fit-content;
+    background-color:var(--background-card);
+    font-family:var(--font-style);
+}
+.card img{
+    width:var(--width-image);
+    height: var(--height-image);
+    border-radius: 20px;
+    
+}
+.card img:hover{
+
+    transform: scale(1.5);
+    transition-duration:3s;
+    transition-timing-function: ease-in-out;
+}
+.card  span
+{
+color: var(--text-color-attribute);
+}
+
+.button{
+    background-color: var(--background-card-button);
+    color: var(--text-color-card-button-text);
+    font-size: var(--text-size-card-button);
+    font-family: var(--font-style);
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 50px 8px;
+    margin-top: 10px;
+    border: none;
+}
+
+.row  
+{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.row div 
+{
+    width:var(--width-div-in-card);
+}
+.price
+{
+    margin-top:10px ;
+}
+

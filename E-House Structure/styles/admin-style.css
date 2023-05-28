@@ -1,0 +1,61 @@
+
+
+:root
+{    
+    --background-card:#eeeeee99;
+    --master-color:#e5cc99;
+    --font-style:Lexend Deca;
+    
+    
+    --text-size:14px;
+    --text-size-button:16px;
+    --text-color:#FFF;
+    
+    --background-buttons:#F00;
+
+    --height-box:300px;
+
+}
+body{
+    font-family:var(--font-style);
+}
+
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+padding: 10px;
+}
+th
+{
+    background-color:var(--master-color);
+}
+td{
+    font-size:var(--text-size);
+}
+button{
+    background-color:var(--background-buttons);
+    color:var(--text-color);
+    font-family:var(--font-style);
+    font-size:var(--text-size-button);
+    padding: 5px;
+    font-weight: 900;
+    border-radius:8px;
+}
+h1
+{
+    text-align:center;
+    padding: 10px;
+}
+.architect_session
+{
+    height:var(--height-box);
+    overflow: auto;
+}
+.user_session
+{
+
+    height: var(--height-box);
+    overflow: auto;
+}
+

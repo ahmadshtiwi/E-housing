@@ -1,0 +1,85 @@
+:root
+{  
+    /*general*/ 
+    --bacground-body:#eee;      /*لون خلفية الموقع */
+    --master-color:#e5cc99;     /*اللون الرئيسي للموقع */
+    --font-style:Lexend Deca; /* شكل الخط */
+
+    /*navbar*/
+    --text-color-nav:#000;      /* لون خط العناصر المتواجدة في الراس   */
+    --bacground-list-navbar:#FFF;
+    --text-size-list:14px;
+    --height-image-profile:30px;
+    --width-image-profile:30px;
+    
+    
+    /*about us*/
+    --text-color-about:#000;
+
+} 
+
+
+/******************** general **********************/
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    font-family:var(--font-style);
+    background-color: var(--bacground-body);
+    
+}
+
+/************************************** navbar ************************************/
+.logo
+{
+    width: 70px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: black 1px 1px 10px;
+    padding: 00px 15px;
+    background-color:var(--master-color);
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 0px 10px;
+    align-items:center;
+}
+.link-list
+{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--text-color-nav);
+    background-color:var(--bacground-list-navbar);
+    font-size:var(--text-size-list) ;
+    border-radius:50px 8px ;
+}
+
+
+/******************************** about us section **********************/
+.about-us-section
+{
+    background-color:var(--master-color);
+    color: var(--text-color-about);
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+
+}

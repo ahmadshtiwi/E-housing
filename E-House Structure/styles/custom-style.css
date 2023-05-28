@@ -1,0 +1,130 @@
+
+:root
+{  
+    /*general*/ 
+    --bacground-body:#eee;      /*لون خلفية الموقع */
+    --master-color:#e5cc99aa;     /*اللون الرئيسي للموقع */
+    --font-style:Lexend Deca; /* شكل الخط */
+
+    /*navbar*/
+    --text-color-nav:#000;      /* لون خط العناصر المتواجدة في الراس   */
+    --bacground-list-navbar:#FFF;
+    --width-logo:70px;
+    --text-size-list:14px;
+    --height-image-profile:30px;
+    --width-image-profile:30px;
+
+
+}
+/************************************** navbar ************************************/
+.logo
+{
+    width: var(--width-logo);
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: black 1px 1px 10px;
+    padding: 0px 15px;
+    background-color:var(--master-color);
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 0px 10px;
+    align-items:center;
+}
+.link-list
+{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--text-color-nav);
+    background-color:var(--bacground-list-navbar);
+    font-size:var(--text-size-list) ;
+    border-radius:50px 8px ;
+}
+
+
+
+/**************************************/
+
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-style);
+
+}
+header
+{
+    display: inline-flex;
+    align-items: center ;
+    gap: 20px;
+    border-radius:8px;
+}
+.continer
+{
+    background-color:var(--master-color);
+    display: inline-flex;
+    flex-flow: column;
+    padding:10px ;
+    border-radius:8px;
+
+
+
+}
+h1
+{
+    text-align: center;
+}
+.custom-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 10px;
+
+
+}
+.items
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+.box-list
+{
+font-weight: 700;
+padding: 5px;
+text-align: center;
+}
+
+.area-box
+{
+    width:52px;
+    padding: 5px;
+}
+
+.btn
+{
+    background-color:var(--master-color);
+    font-family:var(--font-style) ;
+    padding: 10px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 50px 8px;
+}

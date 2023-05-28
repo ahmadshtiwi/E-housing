@@ -1,0 +1,96 @@
+:root
+{   
+    /***********عام  لكل الصفحة ***********/
+    --background-card:#e5cc99aa;
+    --background-body:#eee;
+    --master-color:#e5cc99;
+    --text-size:16px;
+    --font-style:Lexend Deca;
+
+/*** الصورة **/
+--height-image:800px;
+
+/***صندوق تسجيل الدخول**/
+    --height-box-login:fit-content;
+
+/***** زر تسجيل الدخول****/
+    --background-buttons:#fff;
+    --text-color-buttons:#000;
+    --text-size-button:20px;
+    --width-login-button:fit-content;
+
+
+    --text-color-error:#F00;
+}
+
+/*********** body *************/
+body
+{
+    background-color: var(--background-body);
+    font-family:var(--font-style);
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+}
+
+/**********login continer**************/
+
+/*تستخدم لوضع الصورة وبوكس تسجيل الدخول بجانب بعض */
+.login-page
+{
+    display: flex;
+    font-size: var(--text-size);
+    
+}
+
+/****** الصورة *****/
+.login-page img
+{
+height: 800px;
+}
+
+/**********صندوق تسجيل الدخول ********/
+.box-login
+{
+    background-color: var(--background-card);
+    height: var(--height-box-login);
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding: 50px;
+    border-radius: 50px 8px ;
+    text-align: center;
+    
+}
+/******* العناصر داخل بوكس تسجيل الدخول ********/
+.form
+{
+    display: flex;
+    flex-flow: column;
+}
+
+/*************** النصوص الخاصة مثل اسم المستخدم وكلمة المرور ***********/
+.login-items
+{
+    margin-top: 20px;
+    text-align: start;
+}
+
+/*********************** زر تسجيل الدخول ******/
+.login-btn
+{
+    color: var(--text-color-buttons);
+    background-color: var(--background-buttons);
+    font-size: var(--text-size-button);
+    width: var(--width-login-button);
+    margin-top: 30px;
+    padding: 10px;
+    align-self: center;
+    border-radius: 50px 8px;
+}
+/**************** النص الذي يظهر اخطاء ****************/
+.error
+{
+    color: var(--text-color-error);
+}
+

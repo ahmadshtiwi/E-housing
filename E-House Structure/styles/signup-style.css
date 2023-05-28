@@ -1,0 +1,149 @@
+:root
+{   
+        /***********عام  لكل الصفحة ***********/
+
+    --background-card:#e5cc99aa;
+    --master-color:#e5cc99;
+    --background-body:#eee;
+    --text-size:16px;
+    --font-style:Lexend Deca;
+
+    /*** الصورة **/
+    --height-image:800px;
+
+    /***صندوق تسجيل حساب **/
+    --height-box-signup:fit-content;
+
+    /***** زر تسجيل حساب****/
+    --background-buttons:#fff;
+    --text-color-buttons:#000;
+    --text-size-button:20px;
+    --width-signup-button:fit-content;
+
+   
+    --text-color-error:#F00;
+
+    --height-box:25px;
+    
+    /*لون نص النجمة الاجباري*/
+    --text-color-star:#F00;
+}
+/*********** body *************/
+
+body
+{
+    font-family:var(--font-style);
+    background-color: var(--background-body);
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+}
+
+/**********login continer**************/
+
+/*تستخدم لوضع الصورة وبوكس تسجيل الدخول بجانب بعض */
+
+.signup-page
+{
+    display: flex;
+    font-size: var(--text-size);
+    
+}
+
+/****** الصورة *****/
+
+.signup-page img
+{
+height: var(--height-image);
+}
+
+/**********صندوق تسجيل حساب ********/
+
+.box-signup
+{
+    height:var(--height-box-signup);
+    background-color: var(--background-card);
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding: 40px;
+    border-radius: 50px 8px ;
+    text-align: center;
+    
+}
+/******* العناصر داخل بوكس تسجيل حساب ********/
+
+.form{
+    display: flex;
+    flex-flow: column;
+}
+
+/*************** النصوص الخاصة مثل اسم المستخدم وكلمة المرور ***********/
+
+.signup-items
+{
+    margin-top: 20px;
+    text-align: start;
+}
+
+/*********************** زر تسجيل حساب ******/
+
+.signup-btn
+{
+    background-color: var(--background-buttons);
+    width: var(--width-signup-button);
+    font-size: var(--text-size-button);
+    color: var(--text-color-buttons);
+    margin-top: 30px;
+    padding: 10px;
+    align-self: center;
+    border-radius: 50px 8px;
+}
+
+/**************** النص الذي يظهر اخطاء ****************/
+
+.error
+{
+    color: var(--text-color-error);
+}
+
+/*صندوق يحتوي على الجنس*/
+.gender
+{
+    display: flex;
+    flex-flow: column;   
+    justify-content: center;
+}
+/*صندوق يحتوي على عيد الميلاد*/
+
+.birthday
+{
+    display: flex;
+    flex-flow: column; 
+    justify-content: center;
+    margin: 5px;
+
+}
+
+/*يحتوي على الجنس والميلاد سوا */
+.g_f
+{
+    display: flex;
+    align-content:space-between;
+    
+}
+
+ /*صناديق الادخال للمعلومات*/
+.box-item
+{
+    height: var(--height-box);
+    font-family: var(--font-style);
+    text-align: center;
+    font-weight: 700;
+}
+
+/*لون نجمة المطلوب اجباري */
+.start-requerd
+{
+    color:var(--text-color-star);
+}

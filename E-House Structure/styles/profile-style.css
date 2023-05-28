@@ -1,0 +1,136 @@
+/******************************** general **************************************/
+
+:root
+{   
+    /*genral*/
+    --background-body:#eee;
+    --background-card:#eeeeee99;
+    --background-buttons:#fff;
+    --master-color:#e5cc99; 
+    --text-color:#000;
+    --font-style:Lexend Deca;
+
+
+    --width-image-profile:150px;
+
+    --background-items:"transparent";
+
+    --text-color-info:rgba(255, 0, 0, 0.724);
+    --text-size-info:16px;  
+    --text-size-buttons:20px;
+
+
+}
+
+/******* general ********************************/
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family:var(--font-style);
+    font-weight: 900;
+    height: 100vh;
+    background-color:var(--background-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******** profile  ************/
+.profile
+{
+    background-color: var(--background-card);
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.image-profile
+{
+    width: var(--width-image-profile);
+    object-fit: cover;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px black ;
+}
+/*قسم الصورة وزر تحميل الصورة */
+.image_session
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-upload-image
+{
+color: var(--text-color-info);
+}
+
+.information
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 50px;
+}
+
+/*صناديق ادخال المعلومات*/
+input
+{
+    color: var(--text-color-info);
+    font-family:var(--font-style);
+    font-size:var(--text-size-info);
+    background-color: var(--background-items);
+    border: unset;
+}
+
+/*الصورة المتحركة الخلفية */
+.sv
+{
+    position: absolute;
+    z-index: -1;
+}
+
+/* قسم الازرار*/
+.contener-buttons
+{
+    margin-top: 50px;
+    text-align: end;
+}
+
+/*الازرار */
+.buttons
+{
+    font-size: var(--text-size-buttons);
+    font-family: var(--font-style);
+    border-radius: 50px;
+    padding: 3px;
+}
+#save-btn
+{
+    background-color: var(--master-color);
+}
+
+#btn-add-design
+{
+    color: var(--text-color);
+    background-color: var(--master-color);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.select-item
+{
+    font-family: var(--font-style);
+    color: var(--text-color-info);
+    font-size: var(--text-size-info);
+    background-color: var(--background-items);
+    border: none;
+}

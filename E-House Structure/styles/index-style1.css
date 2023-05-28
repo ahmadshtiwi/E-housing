@@ -1,0 +1,346 @@
+/******************************** general **************************************/
+
+:root
+{  
+    /*general*/ 
+    --bacground-body:#eee;      /*لون خلفية الموقع */
+    --master-color:#e5cc99;     /*اللون الرئيسي للموقع */
+    --font-style:Lexend Deca; /* شكل الخط */
+
+    /*navbar*/
+    --text-color-nav:#000;      /* لون خط العناصر المتواجدة في الراس   */
+    --bacground-list-navbar:#FFF;
+    --width-logo:70px;
+    --text-size-list:14px;
+    --height-image-profile:30px;
+    --width-image-profile:30px;
+    
+    /*filter*/
+    --text-color-filter:#000;   /* لون النص المعروض في الفلتر */
+    --text-color-filter-input:#000; /*لون النص المدخل للفلتر */
+    --width-box-area-price:50px;
+    --height-box-area-price:30px;
+    --width-box:30px;
+    --height-box:30px;
+
+    /*card design */
+    --background-card-button:#FFF; /* لون الزر داخل التصميم*/
+    --text-color-card-button-text:#000; /* لون نص الزر داخل التصميم*/
+    --text-color:#000;
+    --background-card:#e5cc99aa; /*لون صندوق التصاميم*/
+    --text-size-card-button:14px;
+    --text-color-attribute:#F00;
+    --width-image:300px;
+    --height-image:300px;
+    --height-design:80vh;
+    --width-div-in-card:152px;
+    --width-design-area:80%;
+
+    /*name archtict*/
+    --height-architect-box:500px;
+    --text-color-name-archtict:#000; /*لون النص اسماء المهندسين */
+    --background-name-archtict-button:#FFF;  /*لون خلفية الازرار لاسماء المهندسين*/
+    --text-size-name-archtict:14px;  /*حجم النص */
+    --width-name-archtict-area:auto; /*عرض الصندوق كامل */
+
+
+    /*about us*/
+    --text-color-about:#000;
+
+    /*contact */
+    --text-color-contact:#000;
+
+    /*drop list profile*/
+    --text-color-profile-name:#000;
+    --text-size-profile-name:14px;
+    --background-profile-list:#eee;
+    --text-color-link-menu:#000;
+
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    font-family:var(--font-style);
+    background-color: var(--bacground-body);
+    
+}
+
+/************************************** navbar ************************************/
+.logo
+{
+    width: var(--width-logo);
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: black 1px 1px 10px;
+    padding: 0px 15px;
+    background-color:var(--master-color);
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 0px 10px;
+    align-items:center;
+}
+.link-list
+{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--text-color-nav);
+    background-color:var(--bacground-list-navbar);
+    font-size:var(--text-size-list) ;
+    border-radius:50px 8px ;
+}
+.login 
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#name-login
+{
+    color:var(--text-color-black);
+    font-size: var(--text-size-list);
+    text-decoration: none;
+    margin: 2px;
+}
+
+.image-profile
+{
+width:var(--width-image-profile);
+height: var(--height-image-profile);
+border-radius: 50%;
+object-fit: cover;
+}
+
+/***************************** filter *************************************/
+.filter
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+}
+.filter label
+{
+    margin: 0px 10px 0px 10px;
+    color: var(--text-color-filter);
+}
+
+.box  /*Price Area   box */
+{
+    height: var(--height-box-area-price);
+    width:var(--width-box-area-price);
+    color: var(--text-color-filter-input);
+    
+}
+
+
+.filter select
+{
+    width: var(--width-box);
+    height: var(--height-box);
+    color:var(--text-color-filter-input);
+}
+
+.filter-contener
+{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.filter-contener .string-box
+{
+    width: fit-content;
+}
+
+/***************************************** body *************************************************/
+
+.container-item
+{
+    display: grid;
+    grid-template-columns:var(--width-design-area) var(--width-name-archtict-area);
+    margin-top: 20px;
+    
+}
+
+.design
+{
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    height:var(--height-design);
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.image-home
+{
+    position: fixed;
+    bottom: 26px;
+    right: 300px;
+    width:50px;
+}
+
+
+/**************************************** card in body *************************/
+.card
+{
+    padding: 10px;
+    border-radius: 50px 8px;
+    display:inline-flex;
+    flex-flow: column;
+    align-items: center;
+    height: fit-content;
+    color:var(--text-color);
+    background-color:var(--background-card);
+    font-family:var(--font-style);
+}
+
+/* صورة التصميم **/
+.card img{
+    width:var(--width-image);
+    height: var(--height-image);
+    border-radius: 20px;
+    
+}
+.card img:hover{
+
+    transform: scale(1.5);
+    transition-duration:3s;
+    transition-timing-function: ease-in-out;
+}
+/* النص الخاص بلسعر والمساحة */
+.card  span
+{
+color: var(--text-color-attribute);
+}
+
+.card button{
+    background-color: var(--background-card-button);
+    color: var(--text-color-card-button-text);
+    font-size: var(--text-size-card-button);
+    font-family: var(--font-style);
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 50px 8px;
+    margin-top: 10px;
+    border: none;
+}
+
+.row  
+{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.row div 
+{
+    width:var(--width-div-in-card);
+}
+
+
+/**************************** side links *******************************/
+
+.link-architect
+{
+    color:var(--text-color-name-archtict);
+    background-color: var(--background-name-archtict-button);
+    font-family:var(--font-style);
+    font-size: var(--text-size-name-archtict);
+    text-align: center;
+    border-bottom: #000 1px solid;
+    border-radius: 8px;
+    font-weight: 900;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.architect
+{
+    display: flex;
+    flex-flow: column;
+}
+
+.continer-archticts
+{
+    overflow: auto;
+    height: var(--height-architect-box);
+}
+
+
+/******************************** drop down ****************************/
+
+
+.dropbtn {
+    color: var(--text-color-profile-name);
+    font-size: var(--text-size-profile-name);
+    background-color: var(--master-color);
+    font-weight: 700;
+    padding: 16px;
+    font-family: var(--font-style);
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    float:left;
+}
+
+.dropdown-content {
+    background-color: var(--background-profile-list);
+    border-radius: 8px;
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+  }
+  
+  .dropdown-content a {
+    color:var(--text-color-link-menu);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+
+}
+
+  
+  .show {
+    display:block;
+}
+

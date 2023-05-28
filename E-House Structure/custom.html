@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--For Css file-->
+    <link rel="stylesheet" href="styles/custom-style.css">
+
+<!-- for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!--Navbar-->
+    <nav id="top">
+        <img src="resource/logo.png" class="logo" alt="" srcset="">
+
+        <ul>
+            <li> <a class="link-list"  href="index.php">Home</a>  </li>
+            <li> <a class="link-list" href="about-us.html">About Us</a> </li>
+            <li> <a class="link-list" href="contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+
+<form action="data.php" method="post">
+
+<h1>Custom Design</h1>
+
+<div class="custom-page">
+
+<!--living Room-->
+    <div class="continer">
+        <header>
+            <span>Living Room</span>
+            <img src="resource/add_btn.png" width="30" id="btn_living_room">
+        </header>
+        <span class="living_room"><!--يتم انشاء الغرف هنا--></span>
+    </div>
+
+<!--Gust Room-->
+    <div class="continer">
+        <header>
+            <span>Gust Room</span>
+            <img src="resource/add_btn.png" width="30" id="btn_gust_room">
+        </header>
+        <span class="gust_room"><!--يتم انشاء الغرف هنا--></span>
+    </div>
+
+<!--bed room-->
+    <div class="continer">
+        <header>
+            <span>Bed Room</span>
+            <img src="resource/add_btn.png" width="30" id="btn_bed_room">
+        </header>
+        <span class="bed_room"><!--يتم انشاء الغرف هنا--></span>
+
+    </div>
+
+<!--kids room-->
+    <div class="continer">
+        <header>
+            <span>Kids Room</span>
+            <img src="resource/add_btn.png" width="30" id="btn_kids_room">
+        </header>
+
+        <span class="kids_room"><!--يتم انشاء الغرف هنا--></span>
+    </div>
+
+<!--kitchen-->
+    <div class="continer">
+        <header>
+            <span>Kitchen</span>
+            <img src="resource/add_btn.png" width="30" id="btn_kitchen">
+        </header>
+        <span class="kitchen"><!--يتم انشاء الغرف هنا--></span>
+    </div>
+
+<!--bathroom-->
+    <div class="continer">
+        <header>
+            <span>Bathroom</span>
+            <img src="resource/add_btn.png" width="30" id="btn_bathroom">
+        </header>
+
+        <span class="bathroom"><!--يتم انشاء الغرف هنا--></span>
+    </div>
+
+
+
+</div>
+    
+    <div class="custom-page">
+        <div ><label>area :</label> <input type="number" class="area-box" ></div>
+        <div ><label>Balcony :</label><input type="checkbox"></div>
+        <div><label>Garden :</label><input  type="checkbox"></div>
+        <div><label>Garage :</label><input type="checkbox"></div>
+    </div>
+
+    <div class="custom-page">
+        <button type="button" class="btn">Request</button>
+    </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="code/custom.js"></script>
+</body>
+</html>
